@@ -1,18 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-// import { App } from 'components/App';
-// import './index.css';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './components/css/index.css';
+import { App } from 'components/App/App';
+import { ThemeProvider } from '@emotion/react';
 
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+const root = createRoot(document.getElementById('root'));
 
-const element = React.createElement('div', {
-  a: 5,
-  b: 10,
-  children: ['Привет мир'],
-});
-console.log(element);
-ReactDOM.render(element, document.querySelector('#root'));
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);

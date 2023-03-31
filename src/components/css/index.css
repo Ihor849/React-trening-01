@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-primary-text);
+  line-height: 1.5;
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  /* display: block; */
+  max-width: 250px;
+  height: auto;
+}
+.App {
+  text-align: center;
+}
+:root {
+  --color-white: #ffffff;
+  --color-black: #010101;
+  --color-green: #12e3193a;
+  --color-red: #f44336;
+  --color-blue: #2196f3;
+  --color-primary-text: #212121;
+  --color-secondary-text: #908b8b;
+}
+/* Discription */
+.description {
+  margin-top: 15px;
+
+  padding: 25px;
+
+  background-color: var(--color-white);
+}
+/* Profile */
+.Container {
+  width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+.profile {
+  width: 100%;
+  text-align: center;
+  background-color: #ccc1c1;
+}
+.avatar {
+  padding: 20px;
+  width: 200px;
+  background-color: var(--color-green);
+  border-radius: 50%;
+}
+.name {
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.tag {
+  margin-top: 10px;
+  font-size: 25px;
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--color-secondary-text);
+}
+.location {
+  margin-top: 10px;
+  font-size: 24px;
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--color-secondary-text);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+}
+.stats-item {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-right: 1px solid #010101;
+}
+.stats-item:last-child {
+  border-right: 0;
+}
+.label {
+  display: flex;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--color-secondary-text);
+}
+.quantity {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
