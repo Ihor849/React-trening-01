@@ -1,37 +1,39 @@
 import PropTypes  from 'prop-types'
+import {Profile,Card,Avatar,Name,Tag,Location,Stats,StatsItem,Label,Quantity} from './Description.styled'
 
 export const Description = ({ username, tag, location, avatar, followers, views, likes }) => {
-    return (<div class='Container'>
-        <div class="description">
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-      alt="User avatar"
-      className="avatar"
-    />
-    <p className="name">Petra Marica</p>
-    <p className="tag">@pmarica</p>
-    <p className="location">Salvador, Brasil</p>
-  </div>
+  return (
+    <Profile>
+        <Card>
+          <Avatar
+            src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+            alt="User avatar"
+            className="avatar"
+          />
+        <Name>Petra Marica</Name>
+        <Tag>@pmarica</Tag>
+        <Location>Salvador, Brasil</Location>
+        </Card>
 
-  <ul className="stats">
-    <li className="stats-item">
-      <span className="label">Followers</span>
-      <span className="quantity">1000</span>
-    </li>
-    <li className="stats-item">
-      <span className="label">Views</span>
-      <span className="quantity">2000</span>
-    </li>
-    <li className="stats-item">
-      <span className="label">Likes</span>
-      <span className="quantity">3000</span>
-    </li>
-  </ul>
-    </div>)
+      <Stats>
+    <StatsItem>
+      <Label>Followers</Label>
+      <Quantity className="quantity">1000</Quantity>
+    </StatsItem>
+    <StatsItem>
+      <Label>Views</Label>
+      <Quantity className="quantity">2000</Quantity>
+    </StatsItem>
+    <StatsItem>
+        <Label>Likes</Label>
+        <Quantity className="quantity">3000</Quantity>
+    </StatsItem>
+      </Stats>
+    </Profile>)
 }
 Description.propTypes = {
     username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
+    tag: PropTypes.string,
     location: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
     followers: PropTypes.number.isRequired,

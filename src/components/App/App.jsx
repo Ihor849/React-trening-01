@@ -2,11 +2,12 @@
 
 import { Profile } from 'components/Profile/Profile'
 import upcomingEvent from 'components/json/user.json'
+import {Page} from './App.styled'
 
 export const App = () => {
   return (
-    <div >
+    <Page>
       <Profile events = {upcomingEvent} />
-    </div>
+    </Page>
   )
 }

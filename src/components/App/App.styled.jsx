@@ -1,6 +1,8 @@
-// import styled from '@emotion/styled'
-// export const Container = styled.div`
-//     width: 100%;
-//   padding: 50px;
-//   background-color: #ccc1c1;
-// `
+import styled from '@emotion/styled'
+
+export const Page = styled.div`
+// class="css-2izc1l
+  background-color: #f1eaea; 
+  text-align: center;
+  
+`
