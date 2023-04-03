@@ -49,10 +49,12 @@ export const Location = styled.p`
 `
 export const Stats = styled.ul`
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
+
   background-color: ${props => props.theme.colors. aquamarine};
 `
 export const StatsItem = styled.li`
+  width: 33.3%;
   padding: ${props => props.theme.spacing(4)};
   display: flex;
   flex-direction: column;
@@ -63,15 +65,15 @@ export const StatsItem = styled.li`
   }
 `
 export const Label = styled.span`
-  display: flex;
-  font-size: ${props => props.theme.fontSize(5)};
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: ${props => props.theme.colors.secondaryText};
+  // display: flex;
+  // font-size: ${props => props.theme.fontSize(5)};
+  // font-weight: 700;
+  // letter-spacing: 1px;
+  // color: ${props => props.theme.colors.secondaryText};
 `
 export const Quantity = styled.span`
-  font-size: ${props => props.theme.fontSize(5)};
-  line-height: ${props => props.theme.spacing(4)};
-  font-weight: 700;
-  letter-spacing: 1px;
+  // font-size: ${props => props.theme.fontSize(5)};
+  // line-height: ${props => props.theme.spacing(4)};
+  // font-weight: 700;
+  // letter-spacing: 1px;
 `

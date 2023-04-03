@@ -4,11 +4,11 @@ import {ContainerProfile} from './Profile.styled'
 
 
 
-export const Profile = ({ events }) => {
+export const Profile = ({ users }) => {
    
     return (
         <ContainerProfile>
-            {events.map(({ username, teg, location, avatar, stats }) => (
+            {users.map(({ username, teg, location, avatar, stats }) => (
                 <Description className='profile' key={username}
                     username={username}
                     tag={teg}
