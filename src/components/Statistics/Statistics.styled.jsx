@@ -13,14 +13,14 @@ export const Title = styled.h2`
   text-transform: uppercase;
   text-align: center;
   background-color:${props => props.theme.colors.white};
-  color: #475965;
+  color: ${props => props.theme.colors.grey};
   font-size: 16px;
   margin: 0;
   padding: 30px 0;
 `
 export const StatList = styled.ul`
-   outline: 1px solid red;
-    margin: 0;
+  outline: 1px solid red;
+  margin: 0;
   padding: 0;
   display: flex;
   text-align: center;
@@ -29,7 +29,7 @@ export const StatList = styled.ul`
 `
 export const Item = styled.li`
  
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   width: 80px;
   height: 60px;
@@ -39,14 +39,14 @@ export const Item = styled.li`
 `
 export const Label = styled.span`
 
-    display: block;
+  display: block;
   flex-basis: 100%;
   font-size: 12px;
   line-height: 40px;
   margin: 0;
   padding: 0;
   height: 30px;
-  color:  ${props => props.theme.colors.red};
+  color:  ${props => props.theme.colors.black};
 `
 export const Percentage = styled.span`
     display: block;

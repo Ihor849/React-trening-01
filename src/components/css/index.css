@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  border-collapse: collapse;
 }
 
 body {
@@ -8,12 +9,6 @@ body {
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: var(--color-primary-text);
-  line-height: 1.5;
-  background-color: #fafafa;
-  scroll-behavior: smooth;
 }
 
 h1,
@@ -191,4 +186,43 @@ img {
 
 /* .percentage {
   font-size: 18px;
+} */
+
+/* .transaction-history {
+  width: 400px;
+  margin: 0 auto;
+  border: 2px solid purple;
+  background-color: antiquewhite;
+} */
+
+/* thead,
+th {
+  width: 33.3%;
+  border: 1px solid black;
+  background-color: aqua;
+} */
+
+tr {
+  font-size: 20px;
+  border: 1px solid black;
+  /* border-spacing: 0; */
+  /* border-color: aqua; */
+}
+
+/* tr,
+td {
+  border: 1px solid black;
+  font-size: 20px;
+} */
+
+/* tr:nth-of-type(even) {
+  background-color: #2fa7f1;
+} */
+
+/* table td:first-child {
+  text-align: left;
+} */
+
+/* td:first-child {
+  padding-left: 30px;
 } */
