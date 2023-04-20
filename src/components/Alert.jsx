@@ -22,6 +22,8 @@ const getBgColor = variant => {
 };
 
 export const Alert = ({ variant, children }) => {
+    console.log( variant);
+    console.log(children);
   return <p style={{ ...alertStyles, backgroundColor: getBgColor(variant) }}>
       {children}</p>;
 };

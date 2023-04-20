@@ -1,5 +1,11 @@
-import { Alert} from '../../components/Alert'
+import { Alert } from '../../components/Alert'
+import { Product } from 'components/Product/Product';
 
+const productCard = {
+  name: "TacosWithLime",
+  price: "10.99",
+  imgUrl: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640",
+}
 
 export const App = () => {
   return (
@@ -16,6 +22,8 @@ export const App = () => {
       <Alert variant="warning">
         Please update your profile contact information
       </Alert>
+      <h1>Best selling products</h1>
+      <Product productCard={productCard } />
     </>
   );
 };
