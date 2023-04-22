@@ -1,0 +1,33 @@
+hr {
+  display: block;
+  border-color: blue;
+  border-style: inset;
+  border-width: 1px;
+}
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  display: grid;
+  row-gap: 30px;
+}
+.section__btn {
+  display: grid;
+  row-gap: 10px;
+}
+.stat__board {
+  /* display: flex; */
+}
+.stat__text {
+  display: flex;
+  gap: 10px;
+}
+.stat__value {
+}
+.wrapper {
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  padding: 5px 15px;
+}
