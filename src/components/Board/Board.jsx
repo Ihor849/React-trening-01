@@ -34,7 +34,9 @@ export class Board extends React.Component {
 		const result = this.countTotal()
 		const { good } = this.state;
 		const percent = Math.round((good * 100) / result);
-		return percent;
+		// Установить ==== 0 ==== по дефолту
+		return Number(percent);
+		
 	}
   
 
