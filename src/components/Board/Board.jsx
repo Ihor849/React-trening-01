@@ -9,10 +9,7 @@ export class Board extends React.Component {
 		bad: 0,
 	}
 	
-	// result = {
-	// 	total: 0,
-	// 	percent: 0,
-	// }
+
 
       
 	handleClick = option => {
@@ -35,7 +32,7 @@ export class Board extends React.Component {
 		const { good } = this.state;
 		const percent = Math.round((good * 100) / result);
 		// Установить ==== 0 ==== по дефолту
-		return Number(percent);
+		return percent;
 		
 	}
   
